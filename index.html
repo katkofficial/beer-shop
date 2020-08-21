@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--Че язык анг да, pivo ne hotite?-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пегас</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper"> <!--У тебя будут видео которые буду вне враппераб поэтому враппер который ровняет контент нужен в каждую секцию, а не просто один на все-->
     <header class="header">
+      <!--wrapper-->
       <nav class="nav">
         <div class="header__logo">
           <img src="img/Logo.svg" alt="">
         </div>
-
+        <!--здесь надо див добавить объединяющий потому что лого слева а то справа-->
         <ul class="links-list">
           <li class="links-list__item">
             <a href="">
@@ -36,19 +37,20 @@
         </div>
       </nav>
 
-      <h1>Хорошее пиво - благородный напиток</h1>
+      <h1>Хорошее пиво - благородный напиток</h1><!--а че где класс-->
 
-      <p>Наше пиво поможет не только утолить жажду, но и чувство голода. Пользуется популярностью в любое время года. Исторически, предприятие основано в 1994 году.</p>
+      <p>Наше пиво поможет не только утолить жажду, но и чувство голода. Пользуется популярностью в любое время года. Исторически, предприятие основано в 1994 году.</p> <!--класс бля где-->
 
       <a href="" class="link scroll-below">Листать ниже</a>
     </header>
 
-    <div class="our-products">
-      <h2>Наша продукция</h2>
+    <div class="our-products"> <!--проще же products назвать, тем более что дальше ты пишешь products__что-то, а не our-products__что-то--><!--и section а не див-->
+      <!--wrapper-->
+      <h2>Наша продукция</h2> <!--класс-->
 
-      <ul class="products-links">
-        <li class="products-links__item">
-          <a href="">Пиво</a>
+      <ul class="products-links"> <!--products-list-->
+        <li class="products-links__item"><!--products-list__item-->
+          <a href="">Пиво</a><!--products-list__link-->
         </li>
         <li class="products-links__item">
           <a href="">Квас</a>
@@ -56,14 +58,14 @@
         <li class="products-links__item">
           <a href="">Полиэтиленовая тара</a>
         </li>
-        <li class="products-links__item">
+        <li class="products-links__item"> <!--оно конечно находится на одном уровне но у этой ссылки другой функционал и ты заебешься ее отдельно вправо выносить-->
           <a href="" class="link">Вся продукция</a>
         </li>
       </ul>
 
-      <div class="beer-columns">
+      <div class="beer-columns"> <!--это тоже список из трек айтемов пива, но если бы надо было сделать слайдер то дивы, но у тебя здесь просто три пива-->
         <div class="beer-item">
-          <div class="beer-item__icon">
+          <div class="beer-item__icon"><!--зочем в див оборачивать картинку-->
             <img src="img/beer-01.png" alt="">
           </div>
           <div class="beer-item__title"><a href="">Изумруд</a></div>
@@ -88,26 +90,27 @@
           </div>
         </div>
       </div>
+      <!--а че где картинки хмеля они не бэкграундом задаются, только поле бэкграундом-->
     </div>
 
-    <div class="our-quality">
+    <div class="our-quality"> <!--вот тоже нахуя тут our но тут ты дальше пишешь our-quality__, неудобно же и твое our нихуя не дает смыслу класса--><!--сектшион-->
       <div class="our-quality__title">
-        <h3>Наше качество</h3>
+        <h3>Наше качество</h3> <!-- почему ты тут обернул в див а до этого нет, и главное зачем ну и это h2-->
       </div>
 
-      <div class="our-quality__subtitle">
+      <div class="our-quality__subtitle"> <!--там в макете два текстовых тега, между ними отступ, поэтому надо на два рахделить с одинаковыми классами--><!--это p-->
         «Пивоварня Златоуста» - это два, юридически, самостоятельных предприятия объединенные в единое производство.
         В  состав объединения входят ООО «Пегас» и ООО «Пивоиндустрия». Исторически, предприятие основано в 1994г., как образцовое подразделение знаменитого производственного объединения «Златоустовский Машиностроительный завод» – участвовавшего в разработке и изготовлении морских баллистических ракетных комплексов и в связи с решением советского правительства, приступившего к изготовлению современного высококачественного оборудования – мини пивоварни.
       </div>
 
       <a href="" class="link more-details">Подробнее о компании</a>
 
-      <div class="our-quality__table">
+      <div class="our-quality__table"> <!--не таблица а список ul -->
         <div class="table-item">
-          <div class="table-item__icon">
+          <div class="table-item__icon"> <!--зочем в див оборачивать-->
             <img src="img/table-icon-01.png" alt="">
           </div>
-          <div class="table-item__text">Традиционные технологии и рецепты советского времени</div>
+          <div class="table-item__text">Традиционные технологии и рецепты советского времени</div><!--это p-->
         </div>
         <div class="table__item">
           <div class="table-item__icon">
@@ -128,18 +131,19 @@
       </div>
     </div>
 
-    <div class="our-graduates">
-      <div class="title">
-        <h2>Наши награды</h2>
+    <div class="our-graduates"> <!--епт твою мать ихние-graduates__блять--><!--сектшион-->
+      <!--враппер-->
+      <div class="title"><!--тут не просто title у тебя в нем ссылка еще-->
+        <h2>Наши награды</h2> <!--где класс у h2-->
         <a href="" class="link all-graduates">Все награды</a>
       </div>
 
-      <div class="graduates-column">
+      <div class="graduates-column"><!--список-->
         <div class="grad-item">
-          <div class="grad-item__title">Пивной аукцион</div>
-          <div class="grad-item__text">Золотая медаль за пиво «Янтарь»</div>
-          <div class="grad-item__city">г.Санкт-Петербург, 2004 г.</div>
-          <div class="grad-item__icon"></div>
+          <div class="grad-item__title">Пивной аукцион</div><!--пэ-->
+          <div class="grad-item__text">Золотая медаль за пиво «Янтарь»</div><!--пэ-->
+          <div class="grad-item__city">г.Санкт-Петербург, 2004 г.</div><!--пэ или спан-->
+          <div class="grad-item__icon"></div> <!--img-->
         </div>
         <div class="grad-item">
           <div class="grad-item__title">Пивная Ярмарка Сибири</div>
@@ -156,30 +160,31 @@
       </div>
     </div>
 
-    <div class="our-manufacture">
-      <div class="manufacture__title">
-        <h3>«Живое» пиво по традиционным технологиям и рецептам советского времени.</h3>
+    <div class="our-manufacture"><!--самому не заебало писать то our-->
+      <div class="manufacture__title"><!--нахуя ты здесь-->
+        <h3>«Живое» пиво по традиционным технологиям и рецептам советского времени.</h3><!--ну это либо h2 либо ваще p -->
       </div>
-      <div class="manufacture__link">
+      <div class="manufacture__link"> <!--ты вот тоже нахуя здесь-->
         <a href="" class="link manufacture-video">Смотреть видео о производстве</a>
       </div>
     </div>
 
-    <div class="news">
-      <div class="news-blocks">
+    <div class="news"><!--КРАСАВА--><!--сектшион-->
+      <!--а где заголовок со ссылкой-->
+      <div class="news-blocks"><!--это враппер-->
         <div class="general-news">
-          <div class="news-item__date"></div>
-          <div class="general-news__title"><h4><a href="">Анонс Гонки «Рипейский Солнцеворот 2013»</a></h4></div>
+          <div class="news-item__date"></div><!--это p или спан-->
+          <div class="general-news__title"><h4><a href="">Анонс Гонки «Рипейский Солнцеворот 2013»</a></h4></div><!--ебанешься блок в блоке в блоке а должно быть h3 в а-->
           <div class="general-news__text"><p class="news-text">Приглашаем всех любителей маунтинбайка  принять
             участие в соревнованиях, проходящих в самых красивых
-            и техничных горах Южного Урала.</p></div>
-          <div class="general-news__image"><img src="" alt=""></div>
+            и техничных горах Южного Урала.</p></div><!--не нужон нам ваш див не нужон-->
+          <div class="general-news__image"><img src="" alt=""></div><!--ты тоже съебысь-->
         </div>
-        <div class="last-3rd-news">
+        <div class="last-3rd-news"><!--это список--><!--лучше не использовать цифры в классах просто news-list-->
           <div class="news-item">
-            <div class="news-item__image"><img src="" alt=""></div>
-            <div class="news-item__date">15 мая 2013</div>
-            <div class="news-item__title"><a href="">Новый сорт пива совсем скоропоступит в продажу</a></div>
+            <div class="news-item__image"><img src="" alt=""></div><!--ты сам поняо-->
+            <div class="news-item__date">15 мая 2013</div><!--ты спан-->
+            <div class="news-item__title"><a href="">Новый сорт пива совсем скоропоступит в продажу</a></div><!--ты просто А со свойством display:inline-block-->
           </div>
           <div class="news-item">
             <div class="news-item__image"></div>
@@ -197,38 +202,40 @@
       </div>
     </div>
 
-    <div class="feedback">
+    <div class="feedback"><!--сектшион-->
       <div class="feedback-column">
         <div class="feedback-column__title">Обратная
-          связь</div>
-        <div class="feedback-column__text">Мы всегда рады ответить на любые
+          связь</div><!--почему теперь ты просто див а не h2-->
+        <div class="feedback-column__text">Мы всегда рады ответить на любые <!--ПЭ-->
           вопросы, касающиеся нашей продукции.
           Обратите внимание, все поля
           обязательны для заполнения.</div>
       </div>
       <div class="feedback-column">
-        <div class="feedback-column__form">
-          <form action="" class="feedback__form">
-            <input type="text" class="input-name" placeholder="Ваше имя">
-            <input type="email" class="input-email" placeholder="Электронная почта">
-            <input type="number" class="input-number" placeholder="Номер телефона">
-            <input type="text" class="input-message" placeholder="Текст сообщения">
-            <input type="checkbox" name="" id="">
+        <div class="feedback-column__form"><!--ты здесь зочем-->
+          <form action="" class="feedback__form"> <!--feedback-form-->
+            <input type="text" class="input-name" placeholder="Ваше имя"><!--отдельный див для трех инпутов-->
+            <input type="email" class="input-email" placeholder="Электронная почта"><!--классы не input- а feedback-form__-->
+            <input type="number" class="input-number" placeholder="Номер телефона"><!--это не тайп намбер это тайп тел-->
+            <input type="text" class="input-message" placeholder="Текст сообщения"><!--потом отдельно текстэреа, но без оборачивающего дива-->
+            <!--еще отдельно оборачиваешь верхние инпуты с текстэреа и отдельно чекбокс с персональными и отправить-->
+            <input type="checkbox" name="" id=""><!--чекбокс с пэ в див-->
             <p class="">Принимаю <a href="">политику конфиденциальности</a> и даю согласие на <a href="">обработку персональных данных</a></p>
             <a href="" class="send-form">Отправить</a>
           </form>
         </div>
       </div>
-      <button class="return-button">^</button>
-      <footer>
+      <button class="return-button">^</button><!--стрелочку надо сделать с помощью before и after а не просто символ-->
+      <footer><!--класс футер-->
         <div class="footer-items">
           <p class="">© ООО «Пегас», 2018</p>
-          <div class="footer-items__links">
-            <a href="">Instagram</a>
+          <div class="footer-items__links"> <!--список-->
+            <a href="">Instagram</a><!--див в не картинка и ссылка-->
             <a href="">Vkontakte</a>
             <a href="">Facebook</a>
           </div>
         </div>
+        <!--а где дэкстра-->
       </footer>
     </div>
   </div>
