@@ -1,243 +1,225 @@
 <!DOCTYPE html>
-<html lang="en"> <!--Че язык анг да, pivo ne hotite?-->
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пегас</title>
 </head>
 <body>
-  <div class="wrapper"> <!--У тебя будут видео которые буду вне враппераб поэтому враппер который ровняет контент нужен в каждую секцию, а не просто один на все-->
-    <header class="header">
-      <!--wrapper-->
+  <header class="header">
+    <div class="wrapper">
       <nav class="nav">
         <div class="header__logo">
           <img src="img/Logo.svg" alt="">
         </div>
-        <!--здесь надо див добавить объединяющий потому что лого слева а то справа-->
-        <ul class="links-list">
-          <li class="links-list__item">
-            <a href="">
-              <img src="img/vk.svg" alt="">
-            </a>
-          </li>
-          <li class="links-list__item">
-            <a href="">
-              <img src="img/inst.svg" alt="">
-            </a>
-          </li>
-          <li class="links-list__item">
-            <a href="">
-              <img src="img/facebook.svg" alt="">
-            </a>
-          </li>
-        </ul>
-
+        <div class="header-links">
+          <ul class="links-list">
+           <li class="links-list__item">
+              <a href="">
+                <img src="img/vk.svg" alt="">
+              </a>
+            </li>
+            <li class="links-list__item">
+              <a href="">
+                <img src="img/inst.svg" alt="">
+              </a>
+            </li>
+            <li class="links-list__item">
+              <a href="">
+                <img src="img/facebook.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="header__burger">
           <button class="burger"></button>
         </div>
       </nav>
-
-      <h1>Хорошее пиво - благородный напиток</h1><!--а че где класс-->
-
-      <p>Наше пиво поможет не только утолить жажду, но и чувство голода. Пользуется популярностью в любое время года. Исторически, предприятие основано в 1994 году.</p> <!--класс бля где-->
-
+      <h1 class="header-title">Хорошее пиво - благородный напиток</h1>
+      <p class="header-text">Наше пиво поможет не только утолить жажду, но и чувство голода. Пользуется популярностью в любое время года. Исторически, предприятие основано в 1994 году.</p>
       <a href="" class="link scroll-below">Листать ниже</a>
-    </header>
+    </div>
+  </header>
 
-    <div class="our-products"> <!--проще же products назвать, тем более что дальше ты пишешь products__что-то, а не our-products__что-то--><!--и section а не див-->
-      <!--wrapper-->
-      <h2>Наша продукция</h2> <!--класс-->
+  <section class="products">
+    <div class="wrapper">
+      <h2 class="products__title">Наша продукция</h2>
+      <ul class="products-list">
+        <li class="products-list__item">
+          <a href="" class="products-list__link">Пиво</a>
+        </li>
+        <li class="products-list__item">
+          <a href="" class="products-list__link">Квас</a>
+        </li>
+        <li class="products-list__item">
+          <a href="" class="products-list__link">Полиэтиленовая тара</a>
+        </li>
+      </ul>
+      <a href="" class="products-list__link all-products__link">Вся продукция</a>
+      <ul class="beer-columns">
+        <li class="beer-item">
+          <img src="img/beer-01.png" alt="" class="beer-item__icon">
+          <a href="" class="beer-item__title">Изумруд</a>
+          <p class="beer-item__text">Пиво темное, фильтрованное, пастеризованное</p>
+        </li>
+        <li class="beer-item">
+          <img src="img/beer-02.png" alt="" class="beer-item__icon">
+          <a href="" class="beer-item__title">Янтарь</a>
+          <p class="beer-item__text">Пиво светлое, фильтрованное, пастеризованное</p>
+        </li>
+        <li class="beer-item">
+          <img src="img/beer-03.png" alt="" class="beer-item__icon">
+          <a href="" class="beer-item__title">Жигулевское</a>
+          <p class="beer-item__text">Пиво фильтрованное,  пастеризованное</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-      <ul class="products-links"> <!--products-list-->
-        <li class="products-links__item"><!--products-list__item-->
-          <a href="">Пиво</a><!--products-list__link-->
+  <section class="quality">
+    <div class="wrapper">
+      <h2 class="quality__title">Наше качество</h2>
+      <p class="quality__subtitle">«Пивоварня Златоуста» - это два, юридически, самостоятельных предприятия объединенные в единое производство.</p>
+      <p class="quality__subtitle">В состав объединения входят ООО «Пегас» и ООО «Пивоиндустрия». Исторически, предприятие основано в 1994г., как образцовое подразделение знаменитого производственного объединения «Златоустовский Машиностроительный завод» – участвовавшего в разработке и изготовлении морских баллистических ракетных комплексов и в связи с решением советского правительства, приступившего к изготовлению современного высококачественного оборудования – мини пивоварни.</p>
+      <a href="" class="link more-details">Подробнее о компании</a>
+      <ul class="quality__table">
+        <li class="table-item">
+          <img src="img/table-icon-01.png" alt="" class="table-item__icon">
+          <p class="table-item__text">Традиционные технологии и рецепты советского времени</p>
         </li>
-        <li class="products-links__item">
-          <a href="">Квас</a>
+        <li class="table-item">
+          <img src="img/table-icon-02.png" alt="" class="table-item__icon">
+          <p class="table-item__text">Высокая квалификация ведущих специалистов</p>
         </li>
-        <li class="products-links__item">
-          <a href="">Полиэтиленовая тара</a>
+        <li class="table-item">
+          <img src="img/table-icon-03.png" alt="" class="table-item__icon">
+          <p class="table-item__text">Современные условия хранения и системы контроля качества</p>
         </li>
-        <li class="products-links__item"> <!--оно конечно находится на одном уровне но у этой ссылки другой функционал и ты заебешься ее отдельно вправо выносить-->
-          <a href="" class="link">Вся продукция</a>
+        <li class="table-item">
+          <img src="img/table-icon-04.png" alt="" class="table-item__icon">
+          <p class="table-item__text">Современное высококачественное оборудование</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="graduates">
+    <div class="wrapper">
+      <div class="graduates__title-link">
+        <h2 class="graduates__title">Наши награды</h2>
+        <a href="" class="link all-graduates">Все награды</a>
+      </div>
+      <ul class="graduates-column">
+        <li class="grad-item">
+          <p class="grad-item__title">Пивной аукцион</p>
+          <p class="grad-item__text">Золотая медаль за пиво «Янтарь»</p>
+          <span class="grad-item__city">г.Санкт-Петербург, 2004 г.</span>
+          <img src="" class="grad-item__icon"></img>
+        </li>
+        <li class="grad-item">
+          <p class="grad-item__title">Пивная Ярмарка Сибири</p>
+          <p class="grad-item__text">Золотая медаль за пиво «Изумруд темное»</p>
+          <span class="grad-item__city">г.Новосибирск, 2011 г.</span>
+          <img src="" class="grad-item__icon"></img>
+        </li>
+        <li class="grad-item">
+          <p class="grad-item__title">Пивной аукцион</p>
+          <p class="grad-item__text">Малая золотая медаль за пиво «Булатное»</p>
+          <span class="grad-item__city">г.Санкт-Петербург, 1999 г.</span>
+          <img src="" class="grad-item__icon"></img>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="manufacture">
+    <div class="wrapper">
+      <h2 class="manufacture__title">«Живое» пиво по традиционным технологиям и рецептам советского времени.</h2>
+      <a href="" class="link manufacture__link">Смотреть видео о производстве</a>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="wrapper">
+      <div class="news__title-link">
+        <h2 class="news__title">Новости</h2>
+        <a href="" class="link news__link">Все новости</a>
+      </div>
+
+      <div class="general-news">
+        <span class="news-item__date"></span>
+        <a href="" class=""><h3 class="general-news__title">Анонс Гонки «Рипейский Солнцеворот 2013»</h3></a>
+        <p class="general-news__text">Приглашаем всех любителей маунтинбайка  принять участие в соревнованиях, проходящих в самых красивых и техничных горах Южного Урала.</p>
+        <img class="general-news__image" src="" alt="">
+      </div>
+
+      <ul class="news-list">
+        <li class="news-item">
+          <img class="news-item__image" src="" alt="">
+          <span class="news-item__date">15 мая 2013</span>
+          <a href="" class="news-item__title">Новый сорт пива совсем скоро поступит в продажу</a>
+        </li>
+        <li class="news-item">
+          <img class="news-item__image" src="" alt="">
+          <span class="news-item__date">15 мая 2013</span>
+          <a href="" class="news-item__title">Мы обновили 50% нашего
+            оборудования</a>
+        </li>
+        <li class="news-item">
+          <img class="news-item__image" src="" alt="">
+          <span class="news-item__date">15 мая 2013</span>
+          <a href="" class="news-item__title">Мы обновили 50% нашего
+            оборудования</a>
         </li>
       </ul>
 
-      <div class="beer-columns"> <!--это тоже список из трек айтемов пива, но если бы надо было сделать слайдер то дивы, но у тебя здесь просто три пива-->
-        <div class="beer-item">
-          <div class="beer-item__icon"><!--зочем в див оборачивать картинку-->
-            <img src="img/beer-01.png" alt="">
-          </div>
-          <div class="beer-item__title"><a href="">Изумруд</a></div>
-          <div class="beer-item__text">Пиво темное, фильтрованное, пастеризованное</div>
-        </div>
-        <div class="beer-item">
-          <div class="beer-item">
-            <div class="beer-item__icon">
-              <img src="img/beer-02.png" alt="">
-            </div>
-            <div class="beer-item__title"><a href="">Янтарь</a></div>
-            <div class="beer-item__text">Пиво светлое, фильтрованное, пастеризованное</div>
-          </div>
-        </div>
-        <div class="beer-item">
-          <div class="beer-item">
-            <div class="beer-item__icon">
-              <img src="img/beer-03.png" alt="">
-            </div>
-            <div class="beer-item__title"><a href="">Жигулевское</a></div>
-            <div class="beer-item__text">Пиво фильтрованное,  пастеризованное</div>
-          </div>
-        </div>
-      </div>
-      <!--а че где картинки хмеля они не бэкграундом задаются, только поле бэкграундом-->
     </div>
+  </section>
 
-    <div class="our-quality"> <!--вот тоже нахуя тут our но тут ты дальше пишешь our-quality__, неудобно же и твое our нихуя не дает смыслу класса--><!--сектшион-->
-      <div class="our-quality__title">
-        <h3>Наше качество</h3> <!-- почему ты тут обернул в див а до этого нет, и главное зачем ну и это h2-->
-      </div>
-
-      <div class="our-quality__subtitle"> <!--там в макете два текстовых тега, между ними отступ, поэтому надо на два рахделить с одинаковыми классами--><!--это p-->
-        «Пивоварня Златоуста» - это два, юридически, самостоятельных предприятия объединенные в единое производство.
-        В  состав объединения входят ООО «Пегас» и ООО «Пивоиндустрия». Исторически, предприятие основано в 1994г., как образцовое подразделение знаменитого производственного объединения «Златоустовский Машиностроительный завод» – участвовавшего в разработке и изготовлении морских баллистических ракетных комплексов и в связи с решением советского правительства, приступившего к изготовлению современного высококачественного оборудования – мини пивоварни.
-      </div>
-
-      <a href="" class="link more-details">Подробнее о компании</a>
-
-      <div class="our-quality__table"> <!--не таблица а список ul -->
-        <div class="table-item">
-          <div class="table-item__icon"> <!--зочем в див оборачивать-->
-            <img src="img/table-icon-01.png" alt="">
-          </div>
-          <div class="table-item__text">Традиционные технологии и рецепты советского времени</div><!--это p-->
-        </div>
-        <div class="table__item">
-          <div class="table-item__icon">
-            <img src="img/table-icon-02.png" alt="">
-          </div>
-          <div class="table-item__text">Высокая квалификация ведущих специалистов</div>
-        </div>
-        <div class="table__item">
-          <div class="table-item__icon">
-            <img src="img/table-icon-03.png" alt="">
-          </div>
-          <div class="table-item__text">Современные условия хранения и системы контроля качества</div>
-        </div>
-        <div class="table__item">
-          <div class="table-item__icon"><img src="img/table-icon-04.png" alt=""></div>
-          <div class="table-item__text">Современное высококачественное оборудование</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="our-graduates"> <!--епт твою мать ихние-graduates__блять--><!--сектшион-->
-      <!--враппер-->
-      <div class="title"><!--тут не просто title у тебя в нем ссылка еще-->
-        <h2>Наши награды</h2> <!--где класс у h2-->
-        <a href="" class="link all-graduates">Все награды</a>
-      </div>
-
-      <div class="graduates-column"><!--список-->
-        <div class="grad-item">
-          <div class="grad-item__title">Пивной аукцион</div><!--пэ-->
-          <div class="grad-item__text">Золотая медаль за пиво «Янтарь»</div><!--пэ-->
-          <div class="grad-item__city">г.Санкт-Петербург, 2004 г.</div><!--пэ или спан-->
-          <div class="grad-item__icon"></div> <!--img-->
-        </div>
-        <div class="grad-item">
-          <div class="grad-item__title">Пивная Ярмарка Сибири</div>
-          <div class="grad-item__text">Малая золотая медаль за пиво «Булатное»</div>
-          <div class="grad-item__city">г.Новосибирск, 2011 г.</div>
-          <div class="grad-item__icon"></div>
-        </div>
-        <div class="grad-item">
-          <div class="grad-item__title">Пивной аукцион</div>
-          <div class="grad-item__text">Золотая медаль за пиво «Изумруд темное»</div>
-          <div class="grad-item__city">г.Санкт-Петербург, 1999 г.</div>
-          <div class="grad-item__icon"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="our-manufacture"><!--самому не заебало писать то our-->
-      <div class="manufacture__title"><!--нахуя ты здесь-->
-        <h3>«Живое» пиво по традиционным технологиям и рецептам советского времени.</h3><!--ну это либо h2 либо ваще p -->
-      </div>
-      <div class="manufacture__link"> <!--ты вот тоже нахуя здесь-->
-        <a href="" class="link manufacture-video">Смотреть видео о производстве</a>
-      </div>
-    </div>
-
-    <div class="news"><!--КРАСАВА--><!--сектшион-->
-      <!--а где заголовок со ссылкой-->
-      <div class="news-blocks"><!--это враппер-->
-        <div class="general-news">
-          <div class="news-item__date"></div><!--это p или спан-->
-          <div class="general-news__title"><h4><a href="">Анонс Гонки «Рипейский Солнцеворот 2013»</a></h4></div><!--ебанешься блок в блоке в блоке а должно быть h3 в а-->
-          <div class="general-news__text"><p class="news-text">Приглашаем всех любителей маунтинбайка  принять
-            участие в соревнованиях, проходящих в самых красивых
-            и техничных горах Южного Урала.</p></div><!--не нужон нам ваш див не нужон-->
-          <div class="general-news__image"><img src="" alt=""></div><!--ты тоже съебысь-->
-        </div>
-        <div class="last-3rd-news"><!--это список--><!--лучше не использовать цифры в классах просто news-list-->
-          <div class="news-item">
-            <div class="news-item__image"><img src="" alt=""></div><!--ты сам поняо-->
-            <div class="news-item__date">15 мая 2013</div><!--ты спан-->
-            <div class="news-item__title"><a href="">Новый сорт пива совсем скоропоступит в продажу</a></div><!--ты просто А со свойством display:inline-block-->
-          </div>
-          <div class="news-item">
-            <div class="news-item__image"></div>
-            <div class="news-item__date">15 мая 2013</div>
-            <div class="news-item__title"><a href="">Мы обновили 50% нашего
-              оборудования</a></div>
-          </div>
-          <div class="news-item">
-            <div class="news-item__image"></div>
-            <div class="news-item__date">15 мая 2013</div>
-            <div class="news-item__title"><a href="">Мы обновили 50% нашего
-              оборудования</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="feedback"><!--сектшион-->
+  <section class="feedback">
+    <div class="wrapper">
       <div class="feedback-column">
-        <div class="feedback-column__title">Обратная
-          связь</div><!--почему теперь ты просто див а не h2-->
-        <div class="feedback-column__text">Мы всегда рады ответить на любые <!--ПЭ-->
-          вопросы, касающиеся нашей продукции.
-          Обратите внимание, все поля
-          обязательны для заполнения.</div>
+        <h2 class="feedback-column__title">Обратная связь</h2>
+        <p class="feedback-column__text">Мы всегда рады ответить на любые вопросы,  касающиеся нашей продукции.</p>
+        <p class="feedback-column__text">Обратите внимание, все поля обязательны для заполнения.</p>
       </div>
       <div class="feedback-column">
-        <div class="feedback-column__form"><!--ты здесь зочем-->
-          <form action="" class="feedback__form"> <!--feedback-form-->
-            <input type="text" class="input-name" placeholder="Ваше имя"><!--отдельный див для трех инпутов-->
-            <input type="email" class="input-email" placeholder="Электронная почта"><!--классы не input- а feedback-form__-->
-            <input type="number" class="input-number" placeholder="Номер телефона"><!--это не тайп намбер это тайп тел-->
-            <input type="text" class="input-message" placeholder="Текст сообщения"><!--потом отдельно текстэреа, но без оборачивающего дива-->
-            <!--еще отдельно оборачиваешь верхние инпуты с текстэреа и отдельно чекбокс с персональными и отправить-->
-            <input type="checkbox" name="" id=""><!--чекбокс с пэ в див-->
+        <form action="" class="feedback-form">
+          <div class="feedback-form__inputs">
+            <input type="text" class="feedback-form__name" placeholder="Ваше имя">
+            <input type="email" class="feedback-form__email" placeholder="Электронная почта">
+            <input type="tel" class="feedback-form__-number" placeholder="Номер телефона">
+            <input type="text" class="feedback-form__-message" placeholder="Текст сообщения">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="feedback-from__checkbox-p">
+            <input type="checkbox" name="" id="">
             <p class="">Принимаю <a href="">политику конфиденциальности</a> и даю согласие на <a href="">обработку персональных данных</a></p>
             <a href="" class="send-form">Отправить</a>
-          </form>
-        </div>
-      </div>
-      <button class="return-button">^</button><!--стрелочку надо сделать с помощью before и after а не просто символ-->
-      <footer><!--класс футер-->
-        <div class="footer-items">
-          <p class="">© ООО «Пегас», 2018</p>
-          <div class="footer-items__links"> <!--список-->
-            <a href="">Instagram</a><!--див в не картинка и ссылка-->
-            <a href="">Vkontakte</a>
-            <a href="">Facebook</a>
           </div>
-        </div>
-        <!--а где дэкстра-->
-      </footer>
+        </form>
+        <button class="return-button">^</button><!--стрелочку надо сделать с помощью before и after а не просто символ-->
+        <footer class="footer">
+          <p class="">© ООО «Пегас», 2018</p>
+          <ul class="footer-links">
+            <li class="footer-link">
+                <img src="" alt="" class="footer-link__img">
+                <a href="" class="footer-link__link">Instagram</a>
+            </li>
+            <li class="footer-link">
+              <img src="" alt="" class="footer-link__img">
+              <a href="" class="footer-link__link">Vkontakte</a>
+            </li>
+            <li class="footer-link">
+            <img src="" alt="" class="footer-item__img">
+            <a href="" class="footer-link__link">Facebook</a>
+            </li>
+          </ul>
+          <p class="dextra-title">dextra</p>
+          <p class="dextra-subtitle">разработка сайта</p>
+        </footer>
+      </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>
