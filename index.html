@@ -12,7 +12,7 @@
         <div class="header__logo">
           <img src="img/Logo.svg" alt="">
         </div>
-        <div class="header-links"><!--Почти, только в этот див еще и бургер входита у тебя просто див который оборачивает список-->
+        <div class="header-links">
           <ul class="links-list">
            <li class="links-list__item">
               <a href="">
@@ -30,9 +30,9 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="header__burger">
-          <button class="burger"></button>
+          <div class="header__burger">
+            <button class="burger"></button>
+          </div>
         </div>
       </nav>
       <h1 class="header-title">Хорошее пиво - благородный напиток</h1>
@@ -55,8 +55,8 @@
           <a href="" class="products-list__link">Полиэтиленовая тара</a>
         </li>
       </ul>
-      <a href="" class="products-list__link all-products__link">Вся продукция</a><!--Можно просто all-products,-->
-      <ul class="beer-columns">
+      <a href="" class="all-products">Вся продукция</a>
+      <ul class="beer-list">
         <li class="beer-item">
           <img src="img/beer-01.png" alt="" class="beer-item__icon">
           <a href="" class="beer-item__title">Изумруд</a>
@@ -79,23 +79,23 @@
   <section class="quality">
     <div class="wrapper">
       <h2 class="quality__title">Наше качество</h2>
-      <p class="quality__subtitle">«Пивоварня Златоуста» - это два, юридически, самостоятельных предприятия объединенные в единое производство.</p><!--наверное лучше не syubtitle, a description или desc или что-то такое, по смыслу, ведь это ни разу не подзаголоовк-->
-      <p class="quality__subtitle">В состав объединения входят ООО «Пегас» и ООО «Пивоиндустрия». Исторически, предприятие основано в 1994г., как образцовое подразделение знаменитого производственного объединения «Златоустовский Машиностроительный завод» – участвовавшего в разработке и изготовлении морских баллистических ракетных комплексов и в связи с решением советского правительства, приступившего к изготовлению современного высококачественного оборудования – мини пивоварни.</p>
+      <p class="quality__description">«Пивоварня Златоуста» - это два, юридически, самостоятельных предприятия объединенные в единое производство.</p>
+      <p class="quality__description">В состав объединения входят ООО «Пегас» и ООО «Пивоиндустрия». Исторически, предприятие основано в 1994г., как образцовое подразделение знаменитого производственного объединения «Златоустовский Машиностроительный завод» – участвовавшего в разработке и изготовлении морских баллистических ракетных комплексов и в связи с решением советского правительства, приступившего к изготовлению современного высококачественного оборудования – мини пивоварни.</p>
       <a href="" class="link more-details">Подробнее о компании</a>
-      <ul class="quality__table"><!--quality-list-->
-        <li class="table-item"><!--quality-list__item-->
+      <ul class="quality-list">
+        <li class="quality-list__item">
           <img src="img/table-icon-01.png" alt="" class="table-item__icon">
           <p class="table-item__text">Традиционные технологии и рецепты советского времени</p>
         </li>
-        <li class="table-item">
+        <li class="quality-list__item">
           <img src="img/table-icon-02.png" alt="" class="table-item__icon">
           <p class="table-item__text">Высокая квалификация ведущих специалистов</p>
         </li>
-        <li class="table-item">
+        <li class="quality-list__item">
           <img src="img/table-icon-03.png" alt="" class="table-item__icon">
           <p class="table-item__text">Современные условия хранения и системы контроля качества</p>
         </li>
-        <li class="table-item">
+        <li class="quality-list__item">
           <img src="img/table-icon-04.png" alt="" class="table-item__icon">
           <p class="table-item__text">Современное высококачественное оборудование</p>
         </li>
@@ -105,24 +105,24 @@
 
   <section class="graduates">
     <div class="wrapper">
-      <div class="graduates__title-link"><!--название класса уебанское какое-то проще graduates-container-->
+      <div class="graduates-container">
         <h2 class="graduates__title">Наши награды</h2>
         <a href="" class="link all-graduates">Все награды</a>
       </div>
-      <ul class="graduates-column">
-        <li class="grad-item"><!--graduates__item-->
+      <ul class="graduates-list">
+        <li class="graduates__item">
           <p class="grad-item__title">Пивной аукцион</p>
           <p class="grad-item__text">Золотая медаль за пиво «Янтарь»</p>
           <span class="grad-item__city">г.Санкт-Петербург, 2004 г.</span>
           <img src="" class="grad-item__icon"></img>
         </li>
-        <li class="grad-item">
+        <li class="graduates__item">
           <p class="grad-item__title">Пивная Ярмарка Сибири</p>
           <p class="grad-item__text">Золотая медаль за пиво «Изумруд темное»</p>
           <span class="grad-item__city">г.Новосибирск, 2011 г.</span>
           <img src="" class="grad-item__icon"></img>
         </li>
-        <li class="grad-item">
+        <li class="graduates__item">
           <p class="grad-item__title">Пивной аукцион</p>
           <p class="grad-item__text">Малая золотая медаль за пиво «Булатное»</p>
           <span class="grad-item__city">г.Санкт-Петербург, 1999 г.</span>
@@ -141,7 +141,7 @@
 
   <section class="news">
     <div class="wrapper">
-      <div class="news__title-link"><!--тоже самое-->
+      <div class="news-container">
         <h2 class="news__title">Новости</h2>
         <a href="" class="link news__link">Все новости</a>
       </div>
@@ -186,17 +186,17 @@
       <div class="feedback-column">
         <form action="" class="feedback-form">
           <div class="feedback-form__inputs">
-            <!--див класс=инпутс-контейнер-->
+            <div class="inputs-container">
               <input type="text" class="feedback-form__name" placeholder="Ваше имя">
               <input type="email" class="feedback-form__email" placeholder="Электронная почта">
-              <input type="tel" class="feedback-form__-number" placeholder="Номер телефона"><!--название класса чек-->
-              <input type="text" class="feedback-form__-message" placeholder="Текст сообщения"><!--тоже-->
-            <!--див-->
+              <input type="tel" class="feedback-form__number" placeholder="Номер телефона">
+              <input type="text" class="feedback-form__message" placeholder="Текст сообщения">
+            </div>
             <textarea name="" id="" cols="30" rows="10"></textarea>
           </div>
           <div class="feedback-from__checkbox-p">
             <input type="checkbox" name="" id="">
-            <p class="">Принимаю <a href="">политику конфиденциальности</a> и даю согласие на <a href="">обработку персональных данных</a></p><!--это не пэ это лейбл-->
+            <label class="">Принимаю <a href="">политику конфиденциальности</a> и даю согласие на <a href="">обработку персональных данных</a></label>
             <a href="" class="send-form">Отправить</a>
           </div>
         </form>
