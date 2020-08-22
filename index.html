@@ -12,7 +12,7 @@
         <div class="header__logo">
           <img src="img/Logo.svg" alt="">
         </div>
-        <div class="header-links">
+        <div class="header-links"><!--Почти, только в этот див еще и бургер входита у тебя просто див который оборачивает список-->
           <ul class="links-list">
            <li class="links-list__item">
               <a href="">
@@ -55,7 +55,7 @@
           <a href="" class="products-list__link">Полиэтиленовая тара</a>
         </li>
       </ul>
-      <a href="" class="products-list__link all-products__link">Вся продукция</a>
+      <a href="" class="products-list__link all-products__link">Вся продукция</a><!--Можно просто all-products,-->
       <ul class="beer-columns">
         <li class="beer-item">
           <img src="img/beer-01.png" alt="" class="beer-item__icon">
@@ -79,11 +79,11 @@
   <section class="quality">
     <div class="wrapper">
       <h2 class="quality__title">Наше качество</h2>
-      <p class="quality__subtitle">«Пивоварня Златоуста» - это два, юридически, самостоятельных предприятия объединенные в единое производство.</p>
+      <p class="quality__subtitle">«Пивоварня Златоуста» - это два, юридически, самостоятельных предприятия объединенные в единое производство.</p><!--наверное лучше не syubtitle, a description или desc или что-то такое, по смыслу, ведь это ни разу не подзаголоовк-->
       <p class="quality__subtitle">В состав объединения входят ООО «Пегас» и ООО «Пивоиндустрия». Исторически, предприятие основано в 1994г., как образцовое подразделение знаменитого производственного объединения «Златоустовский Машиностроительный завод» – участвовавшего в разработке и изготовлении морских баллистических ракетных комплексов и в связи с решением советского правительства, приступившего к изготовлению современного высококачественного оборудования – мини пивоварни.</p>
       <a href="" class="link more-details">Подробнее о компании</a>
-      <ul class="quality__table">
-        <li class="table-item">
+      <ul class="quality__table"><!--quality-list-->
+        <li class="table-item"><!--quality-list__item-->
           <img src="img/table-icon-01.png" alt="" class="table-item__icon">
           <p class="table-item__text">Традиционные технологии и рецепты советского времени</p>
         </li>
@@ -105,12 +105,12 @@
 
   <section class="graduates">
     <div class="wrapper">
-      <div class="graduates__title-link">
+      <div class="graduates__title-link"><!--название класса уебанское какое-то проще graduates-container-->
         <h2 class="graduates__title">Наши награды</h2>
         <a href="" class="link all-graduates">Все награды</a>
       </div>
       <ul class="graduates-column">
-        <li class="grad-item">
+        <li class="grad-item"><!--graduates__item-->
           <p class="grad-item__title">Пивной аукцион</p>
           <p class="grad-item__text">Золотая медаль за пиво «Янтарь»</p>
           <span class="grad-item__city">г.Санкт-Петербург, 2004 г.</span>
@@ -141,7 +141,7 @@
 
   <section class="news">
     <div class="wrapper">
-      <div class="news__title-link">
+      <div class="news__title-link"><!--тоже самое-->
         <h2 class="news__title">Новости</h2>
         <a href="" class="link news__link">Все новости</a>
       </div>
@@ -186,15 +186,17 @@
       <div class="feedback-column">
         <form action="" class="feedback-form">
           <div class="feedback-form__inputs">
-            <input type="text" class="feedback-form__name" placeholder="Ваше имя">
-            <input type="email" class="feedback-form__email" placeholder="Электронная почта">
-            <input type="tel" class="feedback-form__-number" placeholder="Номер телефона">
-            <input type="text" class="feedback-form__-message" placeholder="Текст сообщения">
+            <!--див класс=инпутс-контейнер-->
+              <input type="text" class="feedback-form__name" placeholder="Ваше имя">
+              <input type="email" class="feedback-form__email" placeholder="Электронная почта">
+              <input type="tel" class="feedback-form__-number" placeholder="Номер телефона"><!--название класса чек-->
+              <input type="text" class="feedback-form__-message" placeholder="Текст сообщения"><!--тоже-->
+            <!--див-->
             <textarea name="" id="" cols="30" rows="10"></textarea>
           </div>
           <div class="feedback-from__checkbox-p">
             <input type="checkbox" name="" id="">
-            <p class="">Принимаю <a href="">политику конфиденциальности</a> и даю согласие на <a href="">обработку персональных данных</a></p>
+            <p class="">Принимаю <a href="">политику конфиденциальности</a> и даю согласие на <a href="">обработку персональных данных</a></p><!--это не пэ это лейбл-->
             <a href="" class="send-form">Отправить</a>
           </div>
         </form>
