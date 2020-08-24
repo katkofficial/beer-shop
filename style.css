@@ -1,0 +1,20 @@
+body{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(img/header-background.png);
+  background-repeat: no-repeat;
+  position: relative;
+  height: 700px;
+}
+
+.nav {
+  display: flex;
+}
+
+.header__logo {
+  max-width: 108px;
+  max-height: 120px;
+}
